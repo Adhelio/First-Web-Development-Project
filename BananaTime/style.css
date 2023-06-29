@@ -1,0 +1,436 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 200vh;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: black;
+    font-weight: bolder;
+    margin-left: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: #e9eaf2;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    border-radius: 20px;
+}
+
+.dropdown-profile {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 130px;
+    right: 0%;
+    border-radius: 30px 0 30px 30px;
+    border-width: 4px;
+    border-color: #16150d;
+    border-style: solid;
+    background-color: white;
+    z-index: 9999;
+}
+
+.dropdown-product {
+    position: absolute;
+    display: none;
+    margin: -50px -10px 0 0;
+    width: 400px;
+    height: 300px;
+    right: 0%;
+    border-radius: 30px;
+    border-width: 4px;
+    border-color: #16150d;
+    border-style: solid;
+    background-color: white;
+    z-index: -1;
+}
+
+header ul li:hover div {
+    display: block;
+}
+
+header ul li div h3 {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.masuk-btn {
+    margin-left: 19%;
+    background-color: #e8dcb6;
+    padding: 8px;
+    border-radius: 20px;
+    border-width: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.masuk-btn:hover {
+    background-color: #fffbef;
+}
+
+.regis-btn {
+    background-color: #ffda57;
+    padding: 8px;
+    border-radius: 20px;
+    border-width: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.regis-btn:hover {
+    background-color: #fff1bf;
+}
+
+.content-1 {
+    height: 600px;
+    padding: none;
+    margin: none;
+}
+
+.circle_1 {
+    position: absolute;
+    right: -10%;
+    top: 22%;
+    height: 700px;
+    width: 800px;
+    background-color: #ffda57;
+    border-radius: 100%;
+    z-index: -999;
+}
+
+.content-1 img {
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    width: 55%;
+    z-index: -999;
+}
+
+.content-1 h2 {
+    margin-top: 15%;
+    margin-left: 7%;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.content-1 h1 {
+    margin-top: -1%;
+    margin-left: 7%;
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.content-1 p {
+    margin-top: 2%;
+    margin-left: 7.2%;
+    font-size: 18px;
+}
+
+.content-1 p button {
+    margin-top: 4%;
+    background-color: #ffda57;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-1 p button:hover {
+    background-color: #ffc800;
+}
+
+.content-2 {
+    height: 600px;
+}
+
+.circle_2 {
+    position: absolute;
+    left: -10%;
+    height: 800px;
+    width: 800px;
+    background-color: #ffda57;
+    border-radius: 100%;
+    z-index: -999;
+}
+
+.content-2 img {
+    position: absolute;
+    left: 5%;
+    width: 55%;
+    z-index: -999;
+}
+
+.content-2 p {
+    margin-top: 10%;
+    padding-top: 120px;
+    padding-right: 6%;
+    text-align: right;
+    font-size: 18px;
+}
+
+.content-2 p button {
+    margin-top: 4%;
+    background-color: #ffda57;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content-2 p button:hover {
+    background-color: #ffc800;
+}
+
+.content-3 {
+    height: 500px;
+}
+
+.content-3 h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.content-3 ul li:hover {
+    background-color: #ffeaa0;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+}
+
+.container ul li {
+    position: relative;
+    list-style: none;
+}
+
+.container ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: bolder;
+    margin: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container ul li a h4 {
+    color: #b83d3d;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 8px;
+}
+
+.p-content-1 {
+    height: 600px;
+    padding: none;
+    margin: none;
+}
+
+.p-square {
+    position: absolute;
+    top: 20%;
+    height: 500px;
+    width: 600px;
+    background-color: #ffda57;
+    border-radius: 0 10% 10% 0;
+    z-index: -999;
+}
+
+.p-content-1 .textbox {
+    float: right;
+    margin-top: 30vh;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.p-content-1 .textbox h1 {
+    font-size: 50px;
+}
+
+.p-content-1 .textbox h2 {
+    font-size: 36px;
+    color: #b83d3d;
+}
+
+.p-content-1 .textbox button {
+    background-color: #95e256;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.p-content-1 .textbox button:hover {
+    background-color: #54aa0d;
+}
+
+.p-content-2 {
+    height: 1200px;
+    padding: none;
+    margin: none;
+}
+
+.p-content-2 .p-circle {
+    position: absolute;
+    right: -25%;
+    margin-top: 12%;
+    height: 1100px;
+    width: 1200px;
+    background-color: #ffda57;
+    border-radius: 100%;
+    z-index: -999;
+}
+
+.p-content-2 .textbox-2 {
+    padding: 28% 0 5% 5%;
+}
+
+.p-content-2 h1 {
+    text-align: right;
+    margin-top: 14.5%;
+    margin-right: -28%;
+    float: right;
+    font-size: 36px;
+    color: #3b3926;
+}
+
+.p-content-2 h2 {
+    margin-top: 17%;
+    margin-right: -28%;
+    float: right;
+    font-size: 32px;
+}
+
+.p-content-2 button {
+    margin-top: 15%;
+    margin-right: -40%;
+    float: right;
+    background-color: #95e256;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.p-content-2 button:hover {
+    background-color: #54aa0d;
+}
+
+.img_1 {
+    position: absolute;
+    float: left;
+    margin-top: 15%;
+    margin-left: 5%;
+    z-index: -9999;
+}
+
+.img_2 {
+    float: right;
+    margin-top: 15%;
+    margin-right: -5%;
+}
+
+.img_3 {
+    position: absolute;
+    height: 500px;
+    z-index: -9999;
+    left: -10%;
+}
+
+footer {
+    height: 100px;
+    background-color: #16150d;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #727067;
+    font-size: smaller;
+}
+
+footer ul li {
+    position: relative;
+    list-style: none;
+}
+
+footer ul li a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #727067;
+}
+
+footer .logo {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
